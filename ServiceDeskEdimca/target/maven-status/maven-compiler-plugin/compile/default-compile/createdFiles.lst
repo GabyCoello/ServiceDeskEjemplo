@@ -1,0 +1,4 @@
+com\service\desk\edimca\modelo\Incidencia.class
+com\service\desk\edimca\ServiceDeskEdimcaApplication.class
+com\service\desk\edimca\repository\IncidenciaRepository.class
+com\service\desk\edimca\controlador\IncidenciaControlador.class
