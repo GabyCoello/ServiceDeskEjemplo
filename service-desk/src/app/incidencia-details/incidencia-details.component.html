@@ -1,0 +1,31 @@
+<div *ngIf="customer">
+  <div>
+    <label>Nombre: </label> {{incidencia.nombreempleado}}
+  </div>
+  <div>
+    <label>Descripción: </label> {{incidencia.descripcion}}
+  </div>
+  <div>
+    <label>Prioridad: </label> {{incidencia.prioridad}}
+  </div>
+
+  <div>
+    <label>Técnico Asignado: </label> 
+	<select [(ngModel)]="incidencia.tecnico" class="form-control" name="tecnico">
+  <option value="Tecnico 1">Tecnico 1</option>
+  <option value="Tecnico 2">Tecnico 2</option>
+  <option value="Tecnico 3">Tecnico 3</option>
+	</select>
+  </div>
+
+	
+  
+
+  
+  <span class="button is-small btn-primary" *ngIf='incidencia.aprobado' (click)='updateActive(false)'>Rechazar</span>
+
+  <span class="button is-small btn-primary" *ngIf='!incidencia.aprobado' (click)='updateActive(true)'>Aprobar</span>
+
+
+  <hr/>
+</div>

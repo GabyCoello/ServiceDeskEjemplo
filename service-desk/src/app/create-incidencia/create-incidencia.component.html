@@ -1,0 +1,32 @@
+<h3>Crear Incidencia</h3>
+<div [hidden]="submitted" style="width: 300px;">
+  <form (ngSubmit)="onSubmit()">
+    <div class="form-group">
+      <label for="nombre">Nombre:</label>
+      <input type="text" class="form-control" id="nombre" required [(ngModel)]="incidencia.nombreempleado"  name="nombre">
+    </div>
+
+	<div class="form-group">
+      <label for="nombre">Prioridad</label>
+    
+	<select [(ngModel)]="incidencia.prioridad" class="form-control" name="prioridad">
+  <option value="Alto">Alto</option>
+  <option value="Normal">Normal</option>
+  <option value="Bajo">Bajo</option>
+</select>
+</div>
+	
+	<div class="form-group">
+      <label for="nombre">Descripción</label>
+       <textarea name="descripcion" rows="5" cols="30"  maxlength="250" required [(ngModel)]="incidencia.descripcion"></textarea> 
+    </div>
+
+	
+    <button type="submit" class="btn btn-success">Crear</button>
+  </form>
+</div>
+
+<div [hidden]="!submitted">
+  <h4>You submitted successfully!</h4>
+  <button class="btn btn-success" (click)="newIncidencia()">Nueva Incidencia</button>
+</div>
