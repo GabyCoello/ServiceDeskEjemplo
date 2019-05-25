@@ -23,7 +23,7 @@ spring.datasource.username=***
 spring.datasource.password=***
 spring.jpa.generate-ddl=true
 
-## Arquitectua
+## Arquitectura
 
 Las dos aplicaciones diferentes interactúan a través del servicio HTTP.
 
