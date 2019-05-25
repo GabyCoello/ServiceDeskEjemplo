@@ -2,10 +2,10 @@
 
 El proyecto fue desarrollado con:
 
--Java 11
--Srping - Boot 2.0.3
--PostgreSQL 11.3
--Apache Maven 3.3.3
+- Java 11
+- Srping - Boot 2.0.3
+- PostgreSQL 11.3
+- Apache Maven 3.3.3
 
 
 ## Para ejecutarlo
@@ -42,7 +42,7 @@ Las dos aplicaciones diferentes interactúan a través del servicio HTTP.
 
 Tabla T_INCIDENTE
 
--CREATE TABLE public.t_incidencia (
+- CREATE TABLE public.t_incidencia (
 	nombreempleado varchar(250) NOT NULL,
 	descripcion varchar(250) NOT NULL,
 	fechaincidente timestamp NOT NULL,
